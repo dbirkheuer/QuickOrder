@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastro de pedido</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <button ion-button full large (click)="onClicarTipoPedido()">Tipo de pedido</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full large (click)="onClicarCliente()">Cliente</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full large (click)="onClicarListaPreco()">Lista de preço</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full large (click)="onClicarCondicaoPagamento()">Condição de pagamento</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full large (click)="onClicarFormaPagamento()">Forma de pagamento</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" floating>Valor total do pedido</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="valorTotalPedido" enabled = false></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full large (click)="onClicarProdutos()">Cliente</button>
+      <ion-label color="secondary" floating>Adicionar produtos</ion-label>
+      <ion-input text-right type="text" (click)="onClicarProdutos()" [(ngModel)]="produtos"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar position="bottom">
+    <button ion-button full (click)="onClicarEmSalvar()">Salvar</button>
+  </ion-toolbar>
+</ion-footer>

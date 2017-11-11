@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tabela de preços</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-content padding>
+    <ion-list>
+      <ion-item *ngFor="let listaPreco of listaPrecos" (click)="onClicarListaPreco(listaPreco)">
+        <h2>{{listaPreco.codigo}} - {{listaPreco.descricao}}</h2>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-content>

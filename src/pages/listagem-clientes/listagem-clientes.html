@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Clientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="home">
+  <ion-list>
+    <ion-item *ngFor="let post of posts" (press)="onSelecionarCliente(item)">
+      <ion-avatar item-start>
+        <ion-icon name="contact"></ion-icon>
+      </ion-avatar>
+
+      <h2>{{post.codigo}} - {{post.nome}}</h2>
+      <h3>{{post.cpfCnpj}}</h3>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar position="bottom">
+    <button ion-button full (click)="onClicarNovoCliente()">Novo Cliente</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar Itens</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of itens">
+      <h2>{{item.codProduto}} - {{item.descricao}}</h2>
+      <h2> Valor unitário: R$ {{item.valorUnitario}}</h2>
+      <h2> Quantidade: {{item.quantidade}}</h2>
+      <h2> Valor total: R$ {{item.valoTotal}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar position="bottom">
+    <button ion-button full (click)="onClicarAdicionarItens()">Adicionar</button>
+  </ion-toolbar>
+</ion-footer>

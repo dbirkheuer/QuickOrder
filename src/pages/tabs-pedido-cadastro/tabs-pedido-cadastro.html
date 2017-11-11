@@ -1,0 +1,10 @@
+<ion-header>
+ <ion-navbar>
+    <ion-title>Cadastro de pedido</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Dados" tabIcon="contact"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Itens" tabIcon="paper"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Resumo" tabIcon="podium" (ionSelect)="onClicarAbaResumo()"></ion-tab>
+</ion-tabs>

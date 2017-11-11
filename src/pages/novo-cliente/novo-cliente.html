@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Novo cliente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CPF ou CNPJ</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="cpfCnpj"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>codigo</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="codigo"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="onClicarEmSalvar()">Salvar</button>
+
+
+</ion-content>

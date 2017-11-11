@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resumo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <ion-item>
+    <ion-label id="labelTipoPedido"></ion-label>
+  </ion-item>
+
+   <ion-item>
+    <ion-label id="labelCliente"></ion-label>
+  </ion-item>
+
+   <ion-item>
+    <ion-label id="labelListaPreco"></ion-label>
+  </ion-item>
+
+   <ion-item>
+    <ion-label id="labelCondicaoPagamento"></ion-label>
+  </ion-item>
+
+   <ion-item>
+    <ion-label id="labelFormaPagamento"></ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label id="labelValorTotal"></ion-label>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Quero o pedido por e-mail</ion-label>
+    <ion-checkbox id="checkboxPedidoPorEmail" color="blue" checked="false"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Receber na loja</ion-label>
+    <ion-checkbox id="checkboxReceberNaLoja" color="blue" checked="false"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Recebi o bônus do vendedor</ion-label>
+    <ion-checkbox id="checkboxBonusDoVendedor" color="blue" checked="false"></ion-checkbox>
+  </ion-item>
+</ion-content>
+<ion-footer>
+  <ion-toolbar position="bottom">
+    <button ion-button full (click)="onClicarEmSalvar()">Salvar pedido</button>
+  </ion-toolbar>
+</ion-footer>

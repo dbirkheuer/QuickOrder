@@ -1,0 +1,20 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>condicao-pagamento</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-content padding>
+    <ion-list>
+      <ion-item *ngFor="let condicaoPagamento of condicaoPagamentos" (click)="onClicarCondicaoPagamento(condicaoPagamento)">
+        <h2>{{condicaoPagamento.codigo}} - {{condicaoPagamento.descricao}}</h2>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-content>
